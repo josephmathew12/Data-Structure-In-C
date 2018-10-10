@@ -19,12 +19,12 @@ void traverse()
 
 	if (head  == NULL)
 	{
-		printf("\n\n List is empty !!!!!!!!\n");
+		printf("\n\n The given list is empty !!!!!!!!\n");
 	}
 	else
 	{
 		ptr = head;
-		printf(" \n the list elements are :\n");
+		printf(" \n The list elements are :\n");
 		while(ptr != NULL)
 		{
 			printf(" -> %d ", ptr -> data );
@@ -50,7 +50,7 @@ void insertBeg(int value)
 		n -> addr = head;
 		head = n;
 	}
-	printf("\n element %d successfully postioned at beginning\n", value);
+	printf("\n element %d Successfully postioned at beginning\n", value);
 
 	traverse();
 }
@@ -71,7 +71,7 @@ void insertRandom(int value, int pos)
 		ptr = ptr -> addr;
 		if (ptr == NULL)
 		{
-			printf("\n no such position found!!!\n");
+			printf("\n No such position found!!!\n");
 			break;
 		}
 
@@ -120,13 +120,13 @@ void deleteBeg()
 
 	if (head == NULL)
 	{
-		printf("\n\n List is empty !!!!!!!!\n");
+		printf("\n\n The given ist is empty !!!!!!!!\n");
 	}
 	else
 	{
 		ptr = head;
 		head = ptr -> addr;
-		printf("\n\n element %d has been deleted from the beginning\n", ptr -> data);
+		printf("\n\n Element %d has been deleted from the beginning\n", ptr -> data);
 	}
 
 	traverse();
@@ -141,7 +141,7 @@ void deleteRandom(int pos)
 
 	if (head == NULL)
 	{
-		printf("\n\n List is empty !!!!!!!!\n");
+		printf("\n\n The given list is empty !!!!!!!!\n");
 	}
 	else
 	{
@@ -152,11 +152,11 @@ void deleteRandom(int pos)
 			ptr = ptr -> addr;
 			if (ptr == NULL)
 			{
-				printf("\n no such position found!!!\n");
+				printf("\n No such position found!!!\n");
 				break;
 			}
 		}	
-		printf("\n\n element %d has been deleted from the position %d \n", ptr-> data, pos);
+		printf("\n\n Element %d has been deleted from the position %d \n", ptr-> data, pos);
 		temp -> addr = ptr -> addr;
 		// temp = ptr -> addr;
 		// ptr -> addr = temp -> addr;
@@ -174,7 +174,7 @@ void deleteEnd()
 	if (ptr -> addr == NULL)
 	{
 		head = NULL;
-		printf("\n\n List is empty !!!!!!!!\n");		
+		printf("\n\n The given list is empty !!!!!!!!\n");		
 	}
 	else
 	{
@@ -252,7 +252,7 @@ void main()
 			        exit(0);
 
 			default :
-					printf(" Enter a valid choice\n");
+					printf(" Please enter a valid choice\n");
 
 		}
 	}
